@@ -9,7 +9,10 @@ function comenzarJuego() {
   //   cambio el msj del boton
   btnComenzar.className = "btn btn-secondary btn-lg";
   btnComenzar.innerHTML = "El juego comenzo";
-  btnComenzar.disabled = true
+  btnComenzar.disabled = true;
+  //resetear el form
+  let formJuego = document.querySelector("#formJuego");
+  formJuego.reset();
 }
 
 // Retorna un número aleatorio entre min (incluido) y max (excluido)
