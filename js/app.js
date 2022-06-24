@@ -20,7 +20,8 @@ function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-function consultarNumero() {
+function consultarNumero(e) {
+  e.preventDefault();
   let numeroIngresado = document.querySelector("#numeroIngresado").value;
   let mensaje = document.querySelector("#msj");
   if (numeroIngresado == numeroMagico) {

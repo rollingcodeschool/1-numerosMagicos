@@ -32,7 +32,11 @@
         >
           Comenzar juego
         </button>
-        <form class="my-5 bg-light p-4 rounded" id="formJuego">
+        <form
+          class="my-5 bg-light p-4 rounded"
+          id="formJuego"
+          onsubmit="consultarNumero(event)"
+        >
           <div class="form-text text-start mb-4">
             💡 Ingrese un numero del 1 al 100
           </div>
@@ -45,9 +49,8 @@
             />
             <button
               class="btn btn-outline-primary"
-              type="button"
+              type="submit"
               id="btnAdivinar"
-              onclick="consultarNumero()"
             >
               Enviar
             </button>
